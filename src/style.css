@@ -1,1 +1,65 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+/*MI PARTE*/
+
+body {
+  background-color: green;
+}
+
+.card {
+  background-color: white;
+  width: 18em;
+  height: 25em;
+  margin: 1em auto;
+  box-shadow: 10px 10px 5px 0.5px black;
+}
+
+#suit {
+  width: 100%;
+  height: 25%;
+  padding: 1em;
+  display: flex;
+}
+
+#number {
+  font-size: 6em;
+  width: 100%;
+  height: 50%;
+  text-align: center;
+}
+
+.spade {
+  font-size: 75px;
+}
+
+.heart {
+  font-size: 75px;
+  color: red;
+}
+
+.diamond {
+  font-size: 75px;
+  color: red;
+}
+
+.club {
+  font-size: 75px;
+}
+
+.secondIcon {
+  /*text-align: end;*/
+  justify-content: end;
+  transform: rotate(180deg) scaleX(-1);
+}
+
+.button {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  margin: 2em;
+  justify-content: center;
+}
