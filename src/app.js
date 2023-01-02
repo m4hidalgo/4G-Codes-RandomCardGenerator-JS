@@ -26,14 +26,8 @@ var rndNum = Math.floor(Math.random() * (13 - 1));
 cardNum = rndNum;
 setSuit(rndSuit);
 
-//button.addEventListener("click", replaceSuit);
-//buttonTwo.addEventListener("click", replaceNum);
 buttonThree.addEventListener("click", newCard);
 buttonFour.addEventListener("click", changeSize);
-
-/*function alertRnd() {
-  alert(target.target);
-}*/
 
 function setSuit(num) {
   switch (num) {
@@ -59,28 +53,26 @@ function setSuit(num) {
   }
 }
 
-/*function replaceSuit() {
-  let result = cardSuit;
-
-  //alert(cardSuit);
-
-  let target = document.querySelectorAll("#suit");
-  for (let i = 0; i < target.length; i++) {
-    target[i].innerHTML = result;
-  }
-}
-
-function replaceNum() {
-  let result = cardNum;
-  let target = document.querySelector("#number");
-  target.innerHTML = result;
-}*/
-
 function newCard() {
   let newRndSuit = Math.floor(Math.random() * (3 - 0));
-  let newRndCard = Math.floor(Math.random() * (13 - 0) + 1);
-  if (newRndCard === 0) {
-    newRndCard = 1;
+  let newRndCard = Math.floor(Math.random() * (12 - 0) + 1);
+
+  switch (newRndCard) {
+    case 0:
+      newRndCard = 1;
+      break;
+
+    case 10:
+      newRndCard = "J";
+      break;
+
+    case 11:
+      newRndCard = "Q";
+      break;
+
+    case 12:
+      newRndCard = "K";
+      break;
   }
 
   setSuit(newRndSuit);
