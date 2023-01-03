@@ -62,6 +62,10 @@ function newCard() {
       newRndCard = 1;
       break;
 
+    case 1:
+      newRndCard = "A";
+      break;
+
     case 10:
       newRndCard = "J";
       break;
